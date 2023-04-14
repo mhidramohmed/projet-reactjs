@@ -1,0 +1,38 @@
+{
+  "riders": [
+    {
+      "Id":"0",
+      "FirstName": "first",
+      "LastName": "family",
+      "Email": "email@gmail.com",
+      "PAssWord": "pass",
+      "phone": "tel",
+      "Country": "country",
+      "City": "city",
+      "Address": "add",
+      "TypeOfMoto": "typem",
+      "Brand": "brand",
+      "Description": "desc",
+      "PhotoProfil": "",
+      "IdClub": "0",
+      "IdMedia": "0",
+      "IdCompany": "0"
+    }
+  ],
+  "club": [
+    {
+
+    }
+  ],
+  "media":  [
+    {
+
+    }
+  ],
+  "company":  [
+    {
+
+    }
+  ]
+
+}

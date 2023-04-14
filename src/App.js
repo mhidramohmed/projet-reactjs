@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import Login from './LoginAndSignup/Login/Login';
+import Signup from './LoginAndSignup/Signup/Signup';
+import {Routes,Route} from "react-router-dom";
+import Homepage from "./Admin/Homepage"
+import { ToastContainer } from 'react-bootstrap';
+
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App"> 
+      <div>
+        <ToastContainer theme ='colored'></ToastContainer>
+        <Routes className="main-router">
+          <Route exacte path='/' element={<Login/>}/>
+          <Route path="/login" element={<Login/>}/>
+          <Route path="/sign" element={<Signup/>}/>
+        </Routes>
+      </div>
+
+      {/* <Homepage/> */}
+
+      
+
     </div>
+
   );
 }
 
